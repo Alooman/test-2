@@ -1,0 +1,533 @@
+@import url(https://envyxyz.github.io/removal/removal.css);
+@font-face {
+    font-family: gamefont;
+    src: url('https://fonts.gstatic.com/s/fredoka/v5/X7nP4b87HvSqjb_WIi2yDCRwoQ_k7367_B-i2yQag0-mac3OwyL8EemK.woff2');
+}
+.button.small {
+    height: 65px;
+    width: 65px;
+    line-height: 65px;
+    padding-top: 0px!important;
+    padding-bottom: 0px!important;
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+    font-size: 0px!important;
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 50%;
+}
+#subLogoButtons {
+    width: fit-content;
+    transform: unset;
+    left: unset;
+    right: 0
+}
+
+#subLogoButtons>.button {
+    padding: 0!important;
+    margin: 0!important;
+    box-shadow: 0 0 black!important;
+    font-size: 0!important;
+    transition-duration: 350ms;
+    background: #282929;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    transition-duration: 250ms;
+    border: 3px solid #fff !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed
+}
+
+#subLogoButtons>.button:hover::after {
+    color: #fff!important
+}
+
+#subLogoButtons>div:not(:first-child)::after {
+    font-size: 46px;
+    transition-duration: 350ms;
+    font-family: 'Material Icons Outlined'
+}
+
+#menuBtnHost::after {
+    content: 'devices';
+}
+
+#menuBtnBrowser::after {
+    content: 'search';
+}
+
+#menuBtnRanked>#faceItIconM {
+    display: inline-block!important;
+    height: 35px;
+    width: 35px;
+    transform: translate(-5px, -2px);
+    filter: brightness(0) invert(1)
+}
+
+#inviteButton::after {
+    content: 'insert_link';
+}
+
+#menuBtnJoin::after {
+    content: 'group_add';
+}
+
+#menuBtnJoin {
+    right: 40px;
+    bottom: 275px;
+}
+
+#inviteButton {
+    right: 140px;
+    bottom: 290px;
+}
+
+#menuBtnRanked {
+    right: 235px;
+    bottom: 245px
+}
+
+#menuBtnBrowser {
+    right: 285px;
+    bottom: 150px
+}
+
+#menuBtnHost {
+    right: 275px;
+    bottom: 45px
+}
+
+
+/* menu item container */
+
+#menuItemContainer {
+    background-color: #282828;
+    height: 200px;
+    width: 200px;
+    padding: 55px 55px;
+    margin: -55px -65px;
+    display: unset;
+    top: unset;
+    bottom: 80px;
+    left: 150px;
+    border: #fff 3px solid;
+    border-radius: 50%;
+    outline: #282929 15px solid;
+}
+
+.menuItem {
+    max-width: fit-content;
+    min-height: fit-content!important;
+    background-color: #282929;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    position: fixed;
+    transform: scale(1.3) !important;
+    border: #fff 2px solid;
+    border-radius: 50%;
+}
+.menuItemTitle {
+    font-size: 0!important;
+}
+
+.menBtnIcn {
+    color: #fff!important;
+    transform: unset!important;
+}
+
+#menuItemContainer .material-icons-outlined {
+    margin: -5px!important;
+    padding: 0!important;
+    font-size: 50px!important
+}
+
+.menuItem[onClick*="(5)"] {
+    bottom: 232px;
+    left: 200px;
+}
+
+.menuItem[onClick*="_blank"] {
+    bottom: 45px;
+    left: 200px;
+}
+
+.menuItem[onClick*="(4)"] {
+    bottom: 186px;
+    left: 119px;
+}
+
+.menuItem[onClick*="(14)"] {
+    bottom: 186px;
+    left: 280px;
+}
+
+.menuItem[onClick*="showGames()"] {
+    bottom: 92.5px;
+    left: 120px;
+}
+
+.menuItem[onClick*="[32]"] {
+    bottom: 92.5px;
+    left: 279px;
+}
+
+.menuItem[onClick*="(1)"] {
+    bottom: 140px;
+    left: 200px;
+}
+
+.buttonP, .buttonR, .buttonO, .buttonPI, .button {
+    border: 4px solid #ffffff!important;
+}
+.button:hover {
+    border: 4px solid #ffffff!important;
+}
+.button {
+    background-color: #282929;
+}
+.menuItem .menuItemTitle {
+    display: none;
+}
+#mainLogo {
+    content: url(https://upload.wikimedia.org/wikipedia/commons/8/89/HD_transparent_picture.png);
+}
+.sliderSml {
+    opacity: 1;
+}
+
+.sliderSml::before {
+    content: "Spectate";
+    font-size: 20px;
+    color: white;
+    width: max-content;
+    height: auto;
+    background-color: transparent;
+    text-align: center;
+    transition-duration: 0.25s;
+}
+
+.sliderSml::before {
+    content: "visibility_off";
+    font-size: 45px;
+    color: white;
+    width: max-content;
+    height: auto;
+    background-color: transparent;
+    text-align: center;
+    transition-duration: 0.25s;
+    font-family: 'Material Icons';
+    transform: unset;
+    margin: auto;
+    top: -50%;
+    transform: translate(-17%, -50%);
+}
+
+input:checked+.sliderSml::before {
+    content: "visibility";
+    transform: unset;
+}
+
+input:checked+.sliderSml {
+    background-color: transparent !important;
+}
+
+.sliderSml {
+    opacity: 1;
+    background-color: transparent;
+}
+#spectButton span {
+    font-size: 0px !important;
+}
+#menuClassContainer {
+    transform: unset;
+    position: fixed;
+}
+
+#menuClassContainer>:not(div:nth-child(6)) {
+    display: none;
+}
+
+#menuClassContainer div:nth-child(6)::before {
+    content: '';
+    position: fixed;
+    bottom: -690px;
+    right: 0;
+    width: 1550px;
+    height: 1550px;
+    background-color: #282929;
+    content: linear-gradient(transparent, transparent);
+    -webkit-mask-image: url('https://media.discordapp.net/attachments/947071669565026346/947791894472187934/Untitled_38_copy.png');
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+}
+
+#customizeButton {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 0 !important;
+    background: #282929;
+    width: 220px;
+    height: 220px;
+    border: 2px solid #fff !important;
+    outline: 20px solid #282929;
+    padding: 0 !important;
+    border-radius: 50%;
+    margin: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px 20px 30px #0000003d, 20px 0px 30px #0000002e, 0px 15px 40px #0000006e !important;
+    transition-duration: 250ms;
+    z-index: 99999;
+}
+
+#customizeButton:hover {
+    transform: unset;
+    border-width: 4px!important;
+    outline-width: 14px;
+}
+
+#customizeButton>.material-icons {
+    font-size: 82px !important;
+    margin: 0 !important;
+    text-shadow: 0 0 black;
+    color: var(--accent) !important;
+    font-family: 'Material Icons Outlined';
+}
+#chatHolder {
+    position: absolute;
+    z-index: 1;
+    width: 340px;
+    left: 20px;
+    border: #fff 3px solid;
+    bottom: 20px;
+    border-radius: 15px;
+    background: rgba(40,41,41,0.5);
+}
+#uiBase.onMenu #chatHolder {
+    left: 472px;
+    bottom: 33px;
+}
+#chatInputHolder {
+    width: 100%;
+    padding: 6px;
+    padding-left: 10px;
+    margin-top: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+    background-color: rgb(40, 41, 41);
+    border: 2px solid rgba(0,0,0,0);
+    pointer-events: all;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    text-align: center;
+    color: #fff;
+}
+#chatList {
+    overflow-y: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 999999;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #282929;
+    pointer-events: all;
+    position: relative;
+    direction: rtl;
+    text-align: left;
+}
+.sliderSml::before {
+    content: "visibility_off";
+    font-size: 65px;
+    color: white;
+    width: max-content;
+    height: auto;
+    background-color: transparent;
+    text-align: center;
+    transition-duration: 0.25s;
+    font-family: 'Material Icons Outlined';
+    transform: unset;
+    margin: auto;
+    top: -50%;
+    transform: translate(-30%, -50%);
+    text-shadow: 0px -2px 0px black, 0px 2px 0px black, 2px 0px 0px black, -2px 0px 0px black, 2px 2px 0px black, -2px 2px 0px black, 2px -2px 0px black, -2px -2px 0px black !important;
+}
+input:checked+.sliderSml::before {
+    content: "visibility";
+    transform: unset;
+    height: auto;
+    margin: auto;
+    top: -50%;
+    transform: translate(-30%, -50%);
+}
+#instructions {
+    font-size: 0px;
+    animation: none;
+}
+#uiBase.onMenu #spectateUI {
+    display: block!IMportant;
+}
+
+#uiBase.onMenu #spectateUI>div:not(:nth-child(1)),
+#uiBase.onMenu #spectateUI>#spectateHUD>div:not(.spectateInfo) {
+    display: none!important
+}
+
+#uiBase.onMenu #spectateUI>div:nth-child(1) {
+    position: fixed;
+    top: unset;
+    bottom: 42.5%;
+    transform: translateX(-50%);
+    z-index: 9;
+}
+
+#uiBase.onMenu #spectateUI>div:nth-child(1)>.spectateInfo>#specTimer {
+    background: transparent;
+    color: white;
+    font-size: 55px;
+    text-shadow: 0px -2px 0px black, 0px 2px 0px black, 2px 0px 0px black, -2px 0px 0px black, 2px 2px 0px black, -2px 2px 0px black, 2px -2px 0px black, -2px -2px 0px black !important;
+}
+
+#uiBase.onMenu #spectateUI>div:nth-child(1)>.spectateInfo>#specGameInfo {
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 0px -2px 0px black, 0px 2px 0px black, 2px 0px 0px black, -2px 0px 0px black, 2px 2px 0px black, -2px 2px 0px black, 2px -2px 0px black, -2px -2px 0px black !important;
+}
+
+#uiBase.onMenu #spectateUI>div:nth-child(1)>.spectateInfo>#specGameInfo,
+#uiBase.onMenu #spectateUI>div:nth-child(1)>.spectateInfo>#specTimer {
+    display: block
+}
+.bigMFeatBarI {
+    width: 55px;
+    height: 55px;
+    display: none !important;
+    margin: 6px;
+    margin-top: 8px;
+}
+#mLevelContV {
+    display: none !important;
+    vertical-align: top;
+    font-size: 30px;
+    line-height: 70px;
+    color: #fff;
+    text-align: left;
+}
+#mLevelCont {
+    display: inline-block;
+    background-color: rgba(0,0,0,0);
+    border-bottom-right-radius: 10px;
+    padding-left: -7px;
+    padding-right: 4px;
+    height: 70px;
+    margin-left: 5px;
+}
+#signedInHeaderBar {
+    padding-right: 0!important;
+    border-bottom-right-radius: 25px!important;
+    border-right: #fff 4px solid;
+    border-bottom: 4px solid #fff;
+}
+.progressBarInner {
+    height: 100%;
+    background-image: linear-gradient(to right,#ffffff,#ffffff,94%,white);
+    transition: width 1s ease-in-out;
+    border-radius: 150px;
+}
+.progressBar {
+    width: 100%;
+    margin-top: 0;
+    height: 10px;
+    padding: 2px;
+    background: rgba(0,0,0,.9);
+    border-radius: 150px;
+}
+#menuAccountUsername {
+    vertical-align: bottom;
+    display: inline-block;
+    font-size: 25px;
+}
+#menuKRCount {
+    display: inline-block;
+    color: rgba(255,255,255,.6);
+    font-size: 25px;
+}
+#menuJNKCount {
+    display: inline-block;
+    color: rgba(255,255,255,.6);
+    font-size: 25px;
+}
+.headerBar {
+    position: absolute;
+    top: 0;
+    height: 70px;
+    padding: 0 12px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    background-color: #282929;
+    pointer-events: auto;
+}
+.terms {
+    font-size: 25px;
+    vertical-align: middle;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    pointer-events: all;
+    display: inline-block;
+}
+#mapInfoHolder {
+    position: absolute;
+    top: -44px;
+    right: 0;
+    pointer-events: all;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 15px;
+    height: 100px;
+}
+.verticalSeparatorInline {
+    display: inline-block;
+    border-left: 4px solid rgb(152 152 152);
+    height: 35px;
+    transform: translateY(9px);
+}
+#termsInfo {
+    background-color: #282929;
+    padding: 5px 15px 15px 20px;
+    border-bottom-left-radius: 25px;
+    margin-right: -15px;
+    border-left: #fff 4px solid;
+    border-bottom: #fff 4px solid;
+    border-top-left-radius: 0px;
+}
+#menuPingDisplay, #menuFPSDisplay {
+    font-size: 0px;
+    color: rgba(255,255,255,.75);
+    display: none !important;
+}
+#menuServerInfoContainer {
+    display: none !important;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.headerBarRight {
+    right: -50000px;
+    padding-left: 20px;
+    border-radius: 0 0 0 6px;
+}
